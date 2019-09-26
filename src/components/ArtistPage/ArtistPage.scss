@@ -1,0 +1,23 @@
+@import '../../styles/colors.scss';
+@import '../../styles/shared.scss';
+
+.artist-page {
+    padding: 20px;
+    .artist-name {
+        color: $pink;
+        font-family: Recoleta Alt, serif;
+        font-size: 18vw;
+        padding-top: 25vh;
+        line-height: 1;
+    }
+    .artist-caption {
+        color: #FFF;
+        font-family: 'Faktum', sans-serif;
+        font-weight: 100;
+        margin: 30px 0;
+    }
+    .artist-image {
+        width: 100%;
+    }
+    
+}

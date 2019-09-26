@@ -5,7 +5,7 @@ const HomeTitle = ({ title}) => {
         fontFamily: 'Recoleta Alt, serif',
         textAlign: 'center',
         fontSize: '20vw',
-        color: '#FF0000'
+        color: '#F39EBD'
     }
     const h4styles = {
         fontFamily: 'Faktum, sans-serif',
