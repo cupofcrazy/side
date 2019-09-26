@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Recoleta Alt';
+    font-weight: 300;
+    src: url('../assets/fonts/RecoletaAlt-Regular.woff')
+}
+@font-face {
+    font-family: 'Recoleta Alt';
+    font-weight: 500;
+    src: url('../assets/fonts/RecoletaAlt-Medium.woff')
+}
+
+@font-face {
+    font-family: 'Faktum';
+    font-weight: 100;
+    src: url('../assets/fonts/Faktum-Regular.woff')
+}
+@font-face {
+    font-family: 'Faktum';
+    font-weight: 300;
+    src: url('../assets/fonts/Faktum-Bold.woff')
+}
+
+
+$font-serif: 'Recoleta Alt', serif;
+$font-sans-serif: 'Faktum', sans-serif;
+$backgroundColor: #111111;
+
