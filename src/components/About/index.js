@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet'
 
 class About extends Component {
     render() {
         return (
-            <div>
-                <h1>About Page</h1>
+            <>
+            <Helmet>
+                <title>About</title>
+            </Helmet>
+            <div id="about">
+
+                <div className="flex wrapper">
+                    <div className="flex-left"></div>
+                    <div className="flex-right"></div>
+                </div>
             </div>
+            </>
         );
     }
 }

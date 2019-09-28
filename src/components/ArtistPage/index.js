@@ -17,6 +17,7 @@ class ArtistPage extends Component {
         } = artistData
         return (
             <div className="artist-page">
+            <div className="background-text">{ caption[0] }</div>
                 <h1 className="artist-name">
                     <div>{ caption[0] }</div>
                     <div>{ caption[1] }</div>
