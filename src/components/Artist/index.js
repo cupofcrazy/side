@@ -12,7 +12,7 @@ const Artist = (props) => {
                 <div className="artist-image-container">
                     <div className="artist-index">{ id }</div>
                     <div className="artist-image">
-                        <img width="120%" src={ require(`../../assets/images/${ imgSrc }`)} alt={ caption.join(" ")}></img>
+                        <img width="150%" src={ require(`../../assets/images/${ imgSrc }`)} alt={ caption.join(" ")}></img>
                         <div className="view-artist-btn">
                             <span>View</span>
                         </div>
