@@ -8,24 +8,32 @@ a {
     cursor: pointer;
     position: relative;
     width: 100%;
-    // height: 300px;
+    height: 45vh;
     border-top: 1px solid $white;
     // border-bottom: 1px solid $white;
     padding: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    .artist-image-container  {
+        transition: transform .5s ease;
+    }
+
 
     &:last-child {
         border-bottom: 1px solid $white;
     }
 
-    &:hover .artist-image .view-artist-btn {
-        opacity: 1;
+    &:hover .artist-image-container  {
+        transition: transform .5s ease;
+        transform: rotate(10deg);
     }
+    
 
     .artist-image-container {
-            width: 100px;
+            position: absolute;
+            width: 200px;
             height: 80%;
             overflow: hidden;
         .artist-image {
@@ -58,41 +66,46 @@ a {
         }
     }
 
-    
+    .artist-index {
+        position: absolute;
+        right: 0;
+        margin: 10px 0;
+        text-align: right;
+        color: $pink;
+        font-family: 'Recoleta Alt', serif;
+        font-weight: 300;
+        font-size: 10vw;
+    }
     
     .artist-name {
-        position: relative;
+        position: absolute;
         font-family: 'Recoleta Alt', serif;
+        z-index: 5;
+        // mix-blend-mode: difference;
         h1 {
-            color: $white;
-            font-size: 7vw;
-            // text-align: center;
+            color: $pink;
+            font-size: 6vw;
+            text-align: center;
             font-weight: 500;
             line-height: 1;
         }
         :after {
             position: absolute;
-            top: 0;
+            top: 15px;
             left: 0;
             content: "";
-            border: 1px solid $white;
+            border: 1px solid $pink;
             width: 120%;
-            margin-left: -20px;
-            height: calc(100% - 20px);
+            margin-left: -10px;
+            height: calc(100% - 30px);
             border-radius: 50%;
-            transform: rotate(-15deg);
+            // transform: rotate(-15deg);
         }
     }
-    .artist-index {
-        margin: 10px 0;
-        text-align: right;
-        color: $white;
-        font-family: 'Faktum', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-    }
     .artist-caption {
-        float: right;
+        position: absolute;
+        left: 0;
+        transform: rotate(-90deg);
         // display: inline-block;
         margin: 10px 0;
         text-transform: uppercase;

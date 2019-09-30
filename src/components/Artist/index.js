@@ -8,17 +8,18 @@ const Artist = (props) => {
         <Link to={`artists/${ slug }`}>
             <div className="artist">
                 <div className="artist-name"><h1>{ caption[0] }<br/> { caption[1] }</h1></div>
-                
+                <div className="artist-index">{ id }</div>
                 <div className="artist-image-container">
-                    <div className="artist-index">{ id }</div>
+                    
                     <div className="artist-image">
-                        <img width="150%" src={ require(`../../assets/images/${ imgSrc }`)} alt={ caption.join(" ")}></img>
+                        <img width="100%" src={ require(`../../assets/images/${ imgSrc }`)} alt={ caption.join(" ")}></img>
                         <div className="view-artist-btn">
                             <span>View</span>
                         </div>
                     </div>
-                    <div className="artist-caption">Artist</div>
+                    
                 </div>
+                <div className="artist-caption">Artist</div>
                 
                 
             </div>

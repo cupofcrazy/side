@@ -24,11 +24,15 @@ class Home extends Component {
             data: data
         })
         console.log(this.state.data)
-        // this.scroll = new LocomotiveScroll({
-        //     el: this.home.current,
-        //     smooth: true,
-        //     smoothMobile: true
-        // })
+        this.scroll = new LocomotiveScroll({
+            el: this.home.current,
+            smooth: true,
+            smoothMobile: true
+        })
+    }
+    componentWillUnmount() {
+        this.scroll.destroy()
+        console.log('unmounted')
     }
     render() {
         return (
