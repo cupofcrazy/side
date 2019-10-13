@@ -6,18 +6,21 @@
     padding: 20px;
     overflow-x: hidden;
     .background-text {
-        font-family: Recoleta Alt, serif;
+        font-family: GrandSlam Roman, serif;
         font-size: 50vw;
-        color: #FFF;
+        color: #111;
         opacity: 0.04;
         position: absolute;
         top: -20vw;
         left: -10%;
         z-index: 0;
     }
+    h1 {
+        font-weight: 100;
+    }
     .artist-name {
-        color: $pink;
-        font-family: Recoleta Alt, serif;
+        color: $black;
+        font-family: GrandSlam Roman, serif;
         font-size: 15vw;
         padding-top: 25vh;
         line-height: 1;
@@ -25,7 +28,7 @@
         z-index: 1;
     }
     .artist-caption {
-        color: #FFF;
+        color: #2e2e2e;
         font-family: 'Faktum', sans-serif;
         font-weight: 100;
         margin: 30px 0;

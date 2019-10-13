@@ -8,3 +8,20 @@
     align-items: center;
     cursor: pointer;
 }
+
+.menu {
+    display: none;
+    flex-direction: column !important;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    &.open {
+        display: flex;
+    }
+
+}

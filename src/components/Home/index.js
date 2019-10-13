@@ -12,6 +12,7 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.home = React.createRef()
+        this.sliderRef = React.createRef()
         this.state = {
             data: data
         }
@@ -29,10 +30,12 @@ class Home extends Component {
             smooth: true,
             smoothMobile: true
         })
+        
+        console.log(this.state.data.length)
     }
     componentWillUnmount() {
-        this.scroll.destroy()
-        console.log('unmounted')
+        // this.scroll.destroy()
+        // console.log('unmounted')
     }
     render() {
         return (
@@ -40,20 +43,23 @@ class Home extends Component {
             <Helmet>
                 <title>Rities | Home </title>
             </Helmet>
-                <HomeTitle title="Rities."></HomeTitle>
+                <HomeTitle title="MXMCIV"></HomeTitle>
                 <div className="heading">
-                    <h1>All<ArrowIcon color="#FFF" width={35} height={35} rotate={-45}/></h1> 
+                    <h1>Artists.</h1> 
                 </div>
                 <div className="all-artists">
-                    <div className="wrapper">
-                        { this.state.data.map((artistData, id) => {
-                            // ARTIST DATA
-                            return (
-                                <Artist key={ id } data={ artistData } />
-                            )
-                        })}
+                    <div className="slider" ref={() => this.sliderRef }>
+                        <div className="slider-container">
+                            { this.state.data.map((artistData, id) => {
+                                // ARTIST DATA
+                                return (
+                                    <Artist key={ id } data={ artistData } />
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
+                <div className="drag">Drag to Explore</div>
             </div>
         );
     }

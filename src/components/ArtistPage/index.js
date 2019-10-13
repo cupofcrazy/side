@@ -23,7 +23,7 @@ class ArtistPage extends Component {
     render() {
         const { match } = this.props
         const artistData = this.props.data.find(a => a.slug === match.params.id)
-        const artistName = `${ artistData.caption[0] } ${artistData.caption[1]}`
+        const titleMeta = `${ artistData.title }`
 
         const {
             id, caption, imgSrc, content
@@ -32,7 +32,7 @@ class ArtistPage extends Component {
             <div className="artist-page" ref={ this.artistPage }>
 
             <Helmet>
-                <title>Artist | { artistName }</title>
+                <title>Rities | { titleMeta }</title>
             </Helmet>
 
             <div className="background-text" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">{ caption[0] }</div>
